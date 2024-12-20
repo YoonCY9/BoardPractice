@@ -7,12 +7,13 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class CommentTest {
 
-    @Autowired
-    CommentRepository repository;
-
+//    @Autowired
+//    NoticeBoardRepository repository;
+//
 //    @Test
 //    void CreateCommentTest() {
-//        Comment comment = new Comment("안녕하세요",null);
+//        Post post = new Post();
+//        Comment comment = new Comment("안녕하세요",post);
 //
 //        repository.save(comment);
 //
