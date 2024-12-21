@@ -9,7 +9,7 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String detail;
+    private String detail; // 댓글 내용
 
     @ManyToOne
     private Post post;

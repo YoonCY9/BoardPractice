@@ -1,9 +1,6 @@
 package yoon.notice_boardPractice;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -12,6 +9,7 @@ import java.util.List;
 public class Post {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String userNickName;
@@ -20,7 +18,6 @@ public class Post {
 
     private String detail;
 
-    private Integer views;
 
     @OneToMany(mappedBy = "post")
     private List<Comment> comments;
@@ -28,8 +25,9 @@ public class Post {
     @ManyToOne
     private NoticeBoard board;
 
-
-
-
-
+    public Post(String userNickName, String title, String detail) {
+        this.userNickName = userNickName;
+        this.title = title;
+        this.detail = detail;
+    }
 }

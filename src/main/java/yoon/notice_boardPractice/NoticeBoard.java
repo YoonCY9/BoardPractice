@@ -11,9 +11,9 @@ public class NoticeBoard {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String title;
+    private String title;  // 게시판 제목
 
-    @OneToMany(mappedBy = "board")
+    @OneToMany(mappedBy = "board")  // 게시판 하나와 많은 게시글
     private List<Post> posts;
 
     public String getTitle() {
