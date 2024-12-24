@@ -1,8 +1,9 @@
-package yoon.notice_boardPractice;
+package yoon.notice_boardPractice.post;
 
 import jakarta.persistence.*;
+import yoon.notice_boardPractice.board.NoticeBoard;
+import yoon.notice_boardPractice.comment.Comment;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
@@ -24,6 +25,9 @@ public class Post {
 
     @ManyToOne
     private NoticeBoard board;
+
+    public Post() {
+    }
 
     public Post(String userNickName, String title, String detail) {
         this.userNickName = userNickName;

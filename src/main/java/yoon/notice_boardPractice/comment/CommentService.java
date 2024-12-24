@@ -1,4 +1,4 @@
-package yoon.notice_boardPractice;
+package yoon.notice_boardPractice.comment;
 
 import org.springframework.stereotype.Service;
 

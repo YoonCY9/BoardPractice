@@ -1,4 +1,4 @@
-package yoon.notice_boardPractice;
+package yoon.notice_boardPractice.post;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -1,6 +1,5 @@
-package yoon.notice_boardPractice;
+package yoon.notice_boardPractice.post;
 
-import jakarta.persistence.Column;
 import jakarta.validation.constraints.Size;
 
 public class PostDTO {

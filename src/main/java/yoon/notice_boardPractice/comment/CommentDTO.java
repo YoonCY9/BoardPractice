@@ -1,6 +1,7 @@
-package yoon.notice_boardPractice;
+package yoon.notice_boardPractice.comment;
 
 import jakarta.validation.constraints.Size;
+import yoon.notice_boardPractice.post.Post;
 
 public class CommentDTO {
 

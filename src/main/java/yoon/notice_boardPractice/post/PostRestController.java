@@ -1,4 +1,4 @@
-package yoon.notice_boardPractice;
+package yoon.notice_boardPractice.post;
 
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.GetMapping;

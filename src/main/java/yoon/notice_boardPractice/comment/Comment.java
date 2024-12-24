@@ -1,6 +1,7 @@
-package yoon.notice_boardPractice;
+package yoon.notice_boardPractice.comment;
 
 import jakarta.persistence.*;
+import yoon.notice_boardPractice.post.Post;
 
 @Entity
 public class Comment {
